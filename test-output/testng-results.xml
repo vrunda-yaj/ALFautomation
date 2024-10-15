@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-15T12:42:39 IST" name="ALFSuite" finished-at="2024-10-15T12:43:14 IST" duration-ms="35121">
+    <groups>
+    </groups>
+    <test started-at="2024-10-15T12:42:39 IST" name="AllTests" finished-at="2024-10-15T12:43:14 IST" duration-ms="35121">
+      <class name="testCases.EditDealerTest">
+        <test-method signature="clickdealer()[pri:1, instance:testCases.EditDealerTest@231f98ef]" started-at="2024-10-15T12:42:56 IST" name="clickdealer" finished-at="2024-10-15T12:43:02 IST" duration-ms="6108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickdealer -->
+        <test-method signature="clickEditbtn()[pri:2, instance:testCases.EditDealerTest@231f98ef]" started-at="2024-10-15T12:43:02 IST" name="clickEditbtn" finished-at="2024-10-15T12:43:14 IST" duration-ms="11897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickEditbtn -->
+      </class> <!-- testCases.EditDealerTest -->
+      <class name="testCases.LoginTest">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.LoginTest@6e9a5ed8]" started-at="2024-10-15T12:42:39 IST" name="launchURL" finished-at="2024-10-15T12:42:51 IST" duration-ms="11953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="userLogin()[pri:1, instance:testCases.LoginTest@6e9a5ed8]" started-at="2024-10-15T12:42:51 IST" name="userLogin" finished-at="2024-10-15T12:42:56 IST" duration-ms="5107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+      </class> <!-- testCases.LoginTest -->
+    </test> <!-- AllTests -->
+  </suite> <!-- ALFSuite -->
+</testng-results>
