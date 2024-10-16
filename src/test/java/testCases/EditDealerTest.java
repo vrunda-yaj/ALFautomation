@@ -16,13 +16,9 @@ public class EditDealerTest extends BasePage {
  
 	  
    @Test(priority = 1)
-   public void clickdealer() {
-	   editdealer= new EditDealerPage();
-	   editdealer.clickDealermenu();
-   }
-   @Test(priority = 2)
-   public void clickEditbtn() throws InterruptedException {
+   public void tcEditDealer() throws InterruptedException {
 	  
-	   editdealer.clickEdit();
+	   EditDealerPage editdealer=new EditDealerPage();
+	   editdealer.fnEditDealer();
    }
 }

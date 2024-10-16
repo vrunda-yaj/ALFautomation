@@ -3,11 +3,11 @@
 <suite name="Failed suite [ALFSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="AllTests(failed)">
     <classes>
-      <class name="testCases.EditDealerTest">
+      <class name="testCases.DeleteDealerTest">
         <methods>
-          <include name="clickEditbtn"/>
+          <include name="tcDeleteDealer"/>
         </methods>
-      </class> <!-- testCases.EditDealerTest -->
+      </class> <!-- testCases.DeleteDealerTest -->
     </classes>
   </test> <!-- AllTests(failed) -->
 </suite> <!-- Failed suite [ALFSuite] -->

@@ -59,12 +59,12 @@ public class LoginPage extends BasePage {
             AppUtil.click(english);
             
             // Input login credentials
-            AppUtil.setText(userName, "alfdev@yopmail.com");
-            AppUtil.setText(password, "R0@$7263GGat");
+            AppUtil.setText(userName, USERNAME);
+            AppUtil.setText(password, PASSWORD);
             AppUtil.click(submit);
             
             // Input OTP
-            AppUtil.setText(otp, "118269");
+            AppUtil.setText(otp, LOGIN_OTP);
             AppUtil.click(btn_otp);
 
             // Verify login success by checking Home page visibility

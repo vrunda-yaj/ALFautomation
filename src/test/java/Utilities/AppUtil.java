@@ -7,6 +7,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.BasePage;
 
@@ -47,5 +48,10 @@ public class AppUtil extends BasePage {
     public static void clear(WebElement element) {
         visibilityOfElement(element);
         element.clear();
+    }
+    public static void select_by_value(WebElement element, String text){
+        visibilityOfElement(element);
+        Select sle = new Select(element);
+        sle.selectByValue(text);
     }
 }

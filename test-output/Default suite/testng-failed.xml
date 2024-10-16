@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.EditDealerTest">
+      <class name="testCases.AddDealerTest">
         <methods>
-          <include name="clickEditbtn"/>
-          <include name="clickdealer"/>
+          <include name="tcAddDealer"/>
         </methods>
-      </class> <!-- testCases.EditDealerTest -->
+      </class> <!-- testCases.AddDealerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

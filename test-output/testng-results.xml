@@ -2,30 +2,32 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-15T12:42:39 IST" name="ALFSuite" finished-at="2024-10-15T12:43:14 IST" duration-ms="35121">
+  <suite started-at="2024-10-16T18:12:38 IST" name="ALFSuite" finished-at="2024-10-16T18:13:14 IST" duration-ms="36237">
     <groups>
     </groups>
-    <test started-at="2024-10-15T12:42:39 IST" name="AllTests" finished-at="2024-10-15T12:43:14 IST" duration-ms="35121">
-      <class name="testCases.EditDealerTest">
-        <test-method signature="clickdealer()[pri:1, instance:testCases.EditDealerTest@231f98ef]" started-at="2024-10-15T12:42:56 IST" name="clickdealer" finished-at="2024-10-15T12:43:02 IST" duration-ms="6108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickdealer -->
-        <test-method signature="clickEditbtn()[pri:2, instance:testCases.EditDealerTest@231f98ef]" started-at="2024-10-15T12:43:02 IST" name="clickEditbtn" finished-at="2024-10-15T12:43:14 IST" duration-ms="11897" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickEditbtn -->
-      </class> <!-- testCases.EditDealerTest -->
+    <test started-at="2024-10-16T18:12:38 IST" name="AllTests" finished-at="2024-10-16T18:13:14 IST" duration-ms="36237">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.LoginTest@6e9a5ed8]" started-at="2024-10-15T12:42:39 IST" name="launchURL" finished-at="2024-10-15T12:42:51 IST" duration-ms="11953" status="PASS">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.LoginTest@7e057f43]" started-at="2024-10-16T18:12:38 IST" name="launchURL" finished-at="2024-10-16T18:12:52 IST" duration-ms="14254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="userLogin()[pri:1, instance:testCases.LoginTest@6e9a5ed8]" started-at="2024-10-15T12:42:51 IST" name="userLogin" finished-at="2024-10-15T12:42:56 IST" duration-ms="5107" status="PASS">
+        <test-method signature="userLogin()[pri:1, instance:testCases.LoginTest@7e057f43]" started-at="2024-10-16T18:12:52 IST" name="userLogin" finished-at="2024-10-16T18:12:58 IST" duration-ms="6486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
       </class> <!-- testCases.LoginTest -->
+      <class name="testCases.SetupMenuTest">
+        <test-method signature="tcClickDealer()[pri:0, instance:testCases.SetupMenuTest@7c137fd5]" started-at="2024-10-16T18:12:58 IST" name="tcClickDealer" finished-at="2024-10-16T18:13:04 IST" duration-ms="5116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcClickDealer -->
+      </class> <!-- testCases.SetupMenuTest -->
+      <class name="testCases.DeleteDealerTest">
+        <test-method signature="tcDeleteDealer()[pri:1, instance:testCases.DeleteDealerTest@183ec003]" started-at="2024-10-16T18:13:04 IST" name="tcDeleteDealer" finished-at="2024-10-16T18:13:14 IST" duration-ms="10331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcDeleteDealer -->
+      </class> <!-- testCases.DeleteDealerTest -->
     </test> <!-- AllTests -->
   </suite> <!-- ALFSuite -->
 </testng-results>

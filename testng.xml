@@ -4,7 +4,12 @@
   <test thread-count="5" name="AllTests">
     <classes>
       <class name="testCases.LoginTest"/>
-      <class name="testCases.EditDealerTest"/>
+      <class name="testCases.SetupMenuTest"/>
+     <!-- <class name="testCases.EditDealerTest"/> -->
+    <!-- <class name="testCases.AddDealerTest"/>-->
+     <class name="testCases.DeleteDealerTest"/>
+     
+       
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

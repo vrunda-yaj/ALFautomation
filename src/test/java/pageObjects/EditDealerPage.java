@@ -41,55 +41,33 @@ public class EditDealerPage  extends BasePage {
     WebElement addresstab;
     @FindBy(xpath = "//div[@class='toast-title']")
     WebElement successMsg;
-    @FindBy(xpath = "//button[contains(text(),'Verify OTP')]")
-    WebElement btn_otp;
+   
 
-    // Method to handle valid user login
-    public void clickDealermenu() {
-        SoftAssert softAssert = new SoftAssert();
-
-        try {
-        	
-          AppUtil.click(Dealermenu);
-           
-       //  String pagehead = AppUtil.getText(pageheading);
-         // softAssert.assertEquals(pagehead, "Dealers");
-          AppUtil.waitFor(2);
-          AppUtil.click(Dealermenu);
-          
-         
-            
-        } catch (Exception e) {
-            // Handle any exception that occurs during login process
-            System.out.println("An error occurred: " + e.getMessage());
-            softAssert.fail("Dealer process failed due to exception: " + e.getMessage());
-        } finally {
-            // Ensure all assertions are verified at the end
-            softAssert.assertAll();
-        }
-    }
     
-    public void clickEdit() throws InterruptedException
+   
+    AppUtil actionUtils = new AppUtil();
+    public void fnEditDealer() throws InterruptedException
     {
-    	 SoftAssert softAssert1 = new SoftAssert();
+    	 SoftAssert softAssert = new SoftAssert();
+    	
     	AppUtil.waitFor(5);
     	 AppUtil.click(firstedit);
     	 
     	 String showcontactinfo = AppUtil.getText(contacttab);
-         softAssert1.assertEquals(showcontactinfo, "Contact Information");
+         softAssert.assertEquals(showcontactinfo, "Contact Information");
     	 AppUtil.clear(phoneno);
-    	 AppUtil.setText(phoneno,"(888) 343-1264");
+    	 AppUtil.setText(phoneno,EDIT_PHONENO);
     	 AppUtil.clear(email);
-    	 AppUtil.setText(email,"test02@yopmail.com");
+    	 AppUtil.setText(email,EDIT_EMAIL);
     	 AppUtil.waitFor(2);
     	 AppUtil.click(addresstab);
     	 AppUtil.waitFor(2);
     	 AppUtil.clear(zipCode);
-    	 AppUtil.setText(zipCode,"00975");
+    	 AppUtil.setText(zipCode,EDIT_ZIP);
     	
     	 AppUtil.click(savebtn);
     	 String success = AppUtil.getText(successMsg);
-         softAssert1.assertEquals(success, "Dealer details saved successfully.");
+         softAssert.assertEquals(success, "Dealer details saved successfully.");
     	
     	 
     	 
