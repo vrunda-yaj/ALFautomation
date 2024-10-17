@@ -16,4 +16,9 @@ SetupMenuPage setupmenu;
     	setupmenu.fnDealermenu();
     }
 
+@Test   
+public void tcClickLot() {
+	setupmenu.fnLotmenu();
+}
+
 }

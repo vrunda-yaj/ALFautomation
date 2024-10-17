@@ -7,7 +7,8 @@
       <class name="testCases.SetupMenuTest"/>
      <!-- <class name="testCases.EditDealerTest"/> -->
     <!-- <class name="testCases.AddDealerTest"/>-->
-     <class name="testCases.DeleteDealerTest"/>
+     <!--<class name="testCases.DeleteDealerTest"/>-->
+     <class name="testCases.AddLotTest"/>
      
        
     </classes>

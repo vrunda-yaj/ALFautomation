@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,22 @@
                     <div class="method-list-content passed suite-ALFSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ALFSuite" title="testCases.AddLotTest" class="method navigator-link" hash-for-method="tcAddDealer">tcAddDealer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ALFSuite" title="testCases.AddLotTest" class="method navigator-link" hash-for-method="tcCheckemptyDealer">tcCheckemptyDealer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ALFSuite" title="testCases.SetupMenuTest" class="method navigator-link" hash-for-method="tcClickDealer">tcClickDealer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ALFSuite" title="testCases.DeleteDealerTest" class="method navigator-link" hash-for-method="tcDeleteDealer">tcDeleteDealer</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ALFSuite" title="testCases.SetupMenuTest" class="method navigator-link" hash-for-method="tcClickLot">tcClickLot</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -146,14 +156,21 @@
           <div class="suite-ALFSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.DeleteDealerTest</span>
+              <span class="class-name">testCases.AddLotTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tcDeleteDealer">
-                  </a> <!-- tcDeleteDealer -->
-                  <span class="method-name">tcDeleteDealer</span>
+                  <a name="tcAddDealer">
+                  </a> <!-- tcAddDealer -->
+                  <span class="method-name">tcAddDealer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcCheckemptyDealer">
+                  </a> <!-- tcCheckemptyDealer -->
+                  <span class="method-name">tcCheckemptyDealer</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,6 +186,13 @@
                   <a name="tcClickDealer">
                   </a> <!-- tcClickDealer -->
                   <span class="method-name">tcClickDealer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcClickLot">
+                  </a> <!-- tcClickLot -->
+                  <span class="method-name">tcClickLot</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,7 +211,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testCases.LoginTest&quot;/&gt;
       &lt;class name=&quot;testCases.SetupMenuTest&quot;/&gt;
-      &lt;class name=&quot;testCases.DeleteDealerTest&quot;/&gt;
+      &lt;class name=&quot;testCases.AddLotTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AllTests --&gt;
 &lt;/suite&gt; &lt;!-- ALFSuite --&gt;
@@ -227,24 +251,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tcDeleteDealer')
-data.setCell(0, 2, 'testCases.DeleteDealerTest')
-data.setCell(0, 3, 10331);
+data.setCell(0, 1, 'tcCheckemptyDealer')
+data.setCell(0, 2, 'testCases.AddLotTest')
+data.setCell(0, 3, 20601);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'userLogin')
-data.setCell(1, 2, 'testCases.LoginTest')
-data.setCell(1, 3, 6486);
+data.setCell(1, 1, 'tcAddDealer')
+data.setCell(1, 2, 'testCases.AddLotTest')
+data.setCell(1, 3, 18578);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tcClickDealer')
-data.setCell(2, 2, 'testCases.SetupMenuTest')
-data.setCell(2, 3, 5116);
+data.setCell(2, 1, 'userLogin')
+data.setCell(2, 2, 'testCases.LoginTest')
+data.setCell(2, 3, 6228);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tcClickDealer')
+data.setCell(3, 2, 'testCases.SetupMenuTest')
+data.setCell(3, 3, 4228);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tcClickLot')
+data.setCell(4, 2, 'testCases.SetupMenuTest')
+data.setCell(4, 3, 3465);
 window.suiteTableData['ALFSuite']= { tableData: data, tableDiv: 'times-div-ALFSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-ALFSuite">
               </div> <!-- times-div-ALFSuite -->
             </div> <!-- times-div -->
@@ -277,21 +309,29 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">userLogin</span>
-                <span class="method-start">14286 ms</span>
+                <span class="method-start">12656 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.SetupMenuTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tcClickDealer</span>
-                <span class="method-start">20777 ms</span>
+                <span class="method-start">18889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcClickLot</span>
+                <span class="method-start">23129 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.DeleteDealerTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.AddLotTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">tcDeleteDealer</span>
-                <span class="method-start">25899 ms</span>
+                <span class="method-name">tcCheckemptyDealer</span>
+                <span class="method-start">26596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcAddDealer</span>
+                <span class="method-start">47202 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

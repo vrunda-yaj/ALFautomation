@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-16T18:12:38 IST" name="ALFSuite" finished-at="2024-10-16T18:13:14 IST" duration-ms="36237">
+  <suite started-at="2024-10-17T18:14:47 IST" name="ALFSuite" finished-at="2024-10-17T18:15:53 IST" duration-ms="65795">
     <groups>
     </groups>
-    <test started-at="2024-10-16T18:12:38 IST" name="AllTests" finished-at="2024-10-16T18:13:14 IST" duration-ms="36237">
+    <test started-at="2024-10-17T18:14:47 IST" name="AllTests" finished-at="2024-10-17T18:15:53 IST" duration-ms="65795">
+      <class name="testCases.AddLotTest">
+        <test-method signature="tcCheckemptyDealer()[pri:1, instance:testCases.AddLotTest@221a3fa4]" started-at="2024-10-17T18:15:14 IST" name="tcCheckemptyDealer" finished-at="2024-10-17T18:15:34 IST" duration-ms="20601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcCheckemptyDealer -->
+        <test-method signature="tcAddDealer()[pri:2, instance:testCases.AddLotTest@221a3fa4]" started-at="2024-10-17T18:15:34 IST" name="tcAddDealer" finished-at="2024-10-17T18:15:53 IST" duration-ms="18578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcAddDealer -->
+      </class> <!-- testCases.AddLotTest -->
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.LoginTest@7e057f43]" started-at="2024-10-16T18:12:38 IST" name="launchURL" finished-at="2024-10-16T18:12:52 IST" duration-ms="14254" status="PASS">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.LoginTest@5890e879]" started-at="2024-10-17T18:14:47 IST" name="launchURL" finished-at="2024-10-17T18:15:00 IST" duration-ms="12576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="userLogin()[pri:1, instance:testCases.LoginTest@7e057f43]" started-at="2024-10-16T18:12:52 IST" name="userLogin" finished-at="2024-10-16T18:12:58 IST" duration-ms="6486" status="PASS">
+        <test-method signature="userLogin()[pri:1, instance:testCases.LoginTest@5890e879]" started-at="2024-10-17T18:15:00 IST" name="userLogin" finished-at="2024-10-17T18:15:06 IST" duration-ms="6228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
       </class> <!-- testCases.LoginTest -->
       <class name="testCases.SetupMenuTest">
-        <test-method signature="tcClickDealer()[pri:0, instance:testCases.SetupMenuTest@7c137fd5]" started-at="2024-10-16T18:12:58 IST" name="tcClickDealer" finished-at="2024-10-16T18:13:04 IST" duration-ms="5116" status="PASS">
+        <test-method signature="tcClickDealer()[pri:0, instance:testCases.SetupMenuTest@7d9d0818]" started-at="2024-10-17T18:15:06 IST" name="tcClickDealer" finished-at="2024-10-17T18:15:10 IST" duration-ms="4228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tcClickDealer -->
-      </class> <!-- testCases.SetupMenuTest -->
-      <class name="testCases.DeleteDealerTest">
-        <test-method signature="tcDeleteDealer()[pri:1, instance:testCases.DeleteDealerTest@183ec003]" started-at="2024-10-16T18:13:04 IST" name="tcDeleteDealer" finished-at="2024-10-16T18:13:14 IST" duration-ms="10331" status="PASS">
+        <test-method signature="tcClickLot()[pri:0, instance:testCases.SetupMenuTest@7d9d0818]" started-at="2024-10-17T18:15:10 IST" name="tcClickLot" finished-at="2024-10-17T18:15:14 IST" duration-ms="3465" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tcDeleteDealer -->
-      </class> <!-- testCases.DeleteDealerTest -->
+        </test-method> <!-- tcClickLot -->
+      </class> <!-- testCases.SetupMenuTest -->
     </test> <!-- AllTests -->
   </suite> <!-- ALFSuite -->
 </testng-results>

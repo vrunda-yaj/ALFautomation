@@ -54,4 +54,12 @@ public class AppUtil extends BasePage {
         Select sle = new Select(element);
         sle.selectByValue(text);
     }
+    
+    public static void scroll_till_element(WebElement element) throws InterruptedException {
+
+        visibilityOfElement(element);
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView()", element);
+        waitFor(3);
+    }
 }

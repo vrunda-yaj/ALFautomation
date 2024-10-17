@@ -39,6 +39,18 @@ public class BasePage {
 	    
 	  //DELETE DEALER PAGE VARIABLES
 	    public static final String DELETE_DEALNAME = "Test ALF deAler11";
+	    
+	   // ADD LOT PAGE VARIABLES
+	    public static final String ADD_LOTNAME = "Alf motor lot4";
+	    public static final String ADD_LOTCODE = "902";
+	    public static final String ADD_LOTPHONE = "8654432322";
+	    public static final String ADD_LOTPOCNAME = "Alf motor lot4";
+	    public static final String ADD_LOTPOCEMAIL = "alfmotor04@yopmail.com";
+	    public static final String ADD_LOTPOCPHONE = "8654432322";
+	    public static final String ADD_LOTADDRESS = "FLORIDA";
+	    public static final String ADD_LOTCITY = "MIAMI";
+	    public static final String ADD_LOTZIP = "56744";
+	    
 	   
 	  
 	    public void getLaunchUrl(String browser) {
