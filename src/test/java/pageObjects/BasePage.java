@@ -41,18 +41,44 @@ public class BasePage {
 	    public static final String DELETE_DEALNAME = "Test ALF deAler11";
 	    
 	   // ADD LOT PAGE VARIABLES
-	    public static final String ADD_LOTNAME = "Alf motor lot4";
-	    public static final String ADD_LOTCODE = "902";
+	    public static final String ADD_LOTNAME = "Alf motor lot5";
+	    public static final String ADD_LOTCODE = "903";
 	    public static final String ADD_LOTPHONE = "8654432322";
-	    public static final String ADD_LOTPOCNAME = "Alf motor lot4";
-	    public static final String ADD_LOTPOCEMAIL = "alfmotor04@yopmail.com";
+	    public static final String ADD_LOTPOCNAME = "Alf motor lot5";
+	    public static final String ADD_LOTPOCEMAIL = "alfmotor05@yopmail.com";
 	    public static final String ADD_LOTPOCPHONE = "8654432322";
 	    public static final String ADD_LOTADDRESS = "FLORIDA";
 	    public static final String ADD_LOTCITY = "MIAMI";
 	    public static final String ADD_LOTZIP = "56744";
 	    
-	   
+	    //EDIT LOT PAGE VARIABLES
+	    public static final String EDIT_LOTNAME = "Alf motor lot3";
+	    public static final String EDIT_LOTPHONE = "9033452890";
+	    public static final String EDIT_LOTZIP = "54432";
+	    
+	    //DELETE LOT PAGE VARIABLES
+	    public static final String DELETE_LOTNAME = "Alf motor lot4";
+	    
+	   //ADD USER PAGE VARIABLES
+	    public static final String ADD_UFNAME = "MARTIN";
+	    public static final String ADD_UMNAME = "JOHN";
+	    public static final String ADD_UPHONE = "5443232110";
+	    public static final String ADD_UTITLE = "F and I dealer";
+	    public static final String ADD_UEMAIL = "martinzucot01@yopmail.com";
+	    public static final String ADD_ULNAME = "ZUCOWICH";
+	    public static final String ADD_UMOTHERLNAME = "MARY";
+	    
+	    
+	  //EDIT USER PAGE VARIABLES
+	    
+	    public static final String EDIT_UPHONE = "5443232110";
+	    public static final String EDIT_UMOTHERLNAME = "MARY";
 	  
+	    //DELETE USER PAGE VARIABLES
+	    
+	    public static final String DELETE_UNAME = "new test";
+	    
+	    
 	    public void getLaunchUrl(String browser) {
 
 	        if (browser.equalsIgnoreCase("Chrome")) {

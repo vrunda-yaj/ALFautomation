@@ -11,14 +11,20 @@ public class SetupMenuTest extends BasePage {
 SetupMenuPage setupmenu;
 
 @Test   
-    public void tcClickDealer() {
+    public void TC_dealerMenuSetuUp() {
     	setupmenu= new SetupMenuPage();
     	setupmenu.fnDealermenu();
     }
 
 @Test   
-public void tcClickLot() {
+public void TC_lotMenuSetUp() {
+	setupmenu= new SetupMenuPage();
 	setupmenu.fnLotmenu();
+}
+@Test   
+public void TC_userMenuSetUp() {
+	setupmenu= new SetupMenuPage();
+	setupmenu.fnUsermenu();
 }
 
 }

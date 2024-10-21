@@ -55,6 +55,12 @@ public class AppUtil extends BasePage {
         sle.selectByValue(text);
     }
     
+    public static void select_by_visiblityText(WebElement element, String text){
+        visibilityOfElement(element);
+        Select sle = new Select(element);
+       sle.selectByVisibleText(text);
+    }
+    
     public static void scroll_till_element(WebElement element) throws InterruptedException {
 
         visibilityOfElement(element);

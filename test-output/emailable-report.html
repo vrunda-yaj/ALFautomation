@@ -9,14 +9,62 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">ALFSuite</th></tr>
-<tr><td><a href="#t0">AllTests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">65,795</td><td></td><td></td></tr>
+<tr><td><a href="#t0">AllTests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">121,140</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ALFSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AllTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCases.AddLotTest</td><td><a href="#m0">tcAddDealer</a></td><td rowspan="1">1729169134889</td><td rowspan="1">18578</td></tr><tr class="passedeven"><td><a href="#m1">tcCheckemptyDealer</a></td><td rowspan="1">1729169114283</td><td rowspan="1">20601</td></tr><tr class="passedodd"><td rowspan="1">testCases.LoginTest</td><td><a href="#m2">userLogin</a></td><td rowspan="1">1729169100343</td><td rowspan="1">6228</td></tr><tr class="passedeven"><td rowspan="2">testCases.SetupMenuTest</td><td><a href="#m3">tcClickDealer</a></td><td rowspan="1">1729169106576</td><td rowspan="1">4228</td></tr><tr class="passedeven"><td><a href="#m4">tcClickLot</a></td><td rowspan="1">1729169110816</td><td rowspan="1">3465</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ALFSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AllTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.DeleteUserTest</td><td><a href="#m0">TC_EditUser</a></td><td rowspan="1">1729516993086</td><td rowspan="1">59924</td></tr><tr class="failedodd"><td rowspan="1">testCases.EditLotTest</td><td><a href="#m1">tcEditLot</a></td><td rowspan="1">1729516959691</td><td rowspan="1">33391</td></tr><tr><th colspan="4">AllTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.LoginTest</td><td><a href="#m2">userLogin</a></td><td rowspan="1">1729516949007</td><td rowspan="1">6697</td></tr><tr class="passedodd"><td rowspan="1">testCases.SetupMenuTest</td><td><a href="#m3">TC_userMenuSetUp</a></td><td rowspan="1">1729516955709</td><td rowspan="1">3977</td></tr></tbody>
 </table>
-<h2>AllTests</h2><h3 id="m0">testCases.AddLotTest#tcAddDealer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.AddLotTest#tcCheckemptyDealer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AllTests</h2><h3 id="m0">testCases.DeleteUserTest#TC_EditUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;toast-title&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utilities.AppUtil.visibilityOfElement(AppUtil.java:39)
+	at Utilities.AppUtil.getText(AppUtil.java:32)
+	at pageObjects.DeleteUserPage.fnDeleteUser(DeleteUserPage.java:51)
+	at testCases.DeleteUserTest.TC_EditUser(DeleteUserTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;toast-title&apos;]&quot;}
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc558235bbf622da0d774df7c8ed2fe8, findElement {using=xpath, value=//div[@class=&apos;toast-title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62587/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc558235bbf622da0d774df7c8ed2fe8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.EditLotTest#tcEditLot</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (dc558235bbf622da0d774df7c8ed2fe8)] -&gt; xpath: //input[@type=&apos;search&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62587/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc558235bbf622da0d774df7c8ed2fe8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utilities.AppUtil.visibilityOfElement(AppUtil.java:39)
+	at Utilities.AppUtil.setText(AppUtil.java:26)
+	at pageObjects.EditLotPage.fnEditLot(EditLotPage.java:44)
+	at testCases.EditLotTest.tcEditLot(EditLotTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">testCases.LoginTest#userLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCases.SetupMenuTest#tcClickDealer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testCases.SetupMenuTest#tcClickLot</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.SetupMenuTest#TC_userMenuSetUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

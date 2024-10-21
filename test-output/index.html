@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ALFSuite" class="navigator-link">
-              <span class="suite-name border-passed">ALFSuite</span>
+              <span class="suite-name border-failed">ALFSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ALFSuite" class="hide-methods failed suite-ALFSuite"> (hide)</a> <!-- hide-methods failed suite-ALFSuite -->
+                      <a href="#" panel-name="suite-ALFSuite" class="show-methods failed suite-ALFSuite"> (show)</a> <!-- show-methods failed suite-ALFSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-ALFSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ALFSuite" title="testCases.DeleteUserTest" class="method navigator-link" hash-for-method="TC_EditUser">TC_EditUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ALFSuite" title="testCases.EditLotTest" class="method navigator-link" hash-for-method="tcEditLot">tcEditLot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ALFSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +122,7 @@
                     <div class="method-list-content passed suite-ALFSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ALFSuite" title="testCases.AddLotTest" class="method navigator-link" hash-for-method="tcAddDealer">tcAddDealer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ALFSuite" title="testCases.AddLotTest" class="method navigator-link" hash-for-method="tcCheckemptyDealer">tcCheckemptyDealer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ALFSuite" title="testCases.SetupMenuTest" class="method navigator-link" hash-for-method="tcClickDealer">tcClickDealer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ALFSuite" title="testCases.SetupMenuTest" class="method navigator-link" hash-for-method="tcClickLot">tcClickLot</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ALFSuite" title="testCases.SetupMenuTest" class="method navigator-link" hash-for-method="TC_userMenuSetUp">TC_userMenuSetUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +142,89 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ALFSuite" class="panel ALFSuite">
+          <div class="suite-ALFSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.DeleteUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_EditUser">
+                  </a> <!-- TC_EditUser -->
+                  <span class="method-name">TC_EditUser</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;toast-title&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utilities.AppUtil.visibilityOfElement(AppUtil.java:39)
+	at Utilities.AppUtil.getText(AppUtil.java:32)
+	at pageObjects.DeleteUserPage.fnDeleteUser(DeleteUserPage.java:51)
+	at testCases.DeleteUserTest.TC_EditUser(DeleteUserTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;toast-title&apos;]&quot;}
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc558235bbf622da0d774df7c8ed2fe8, findElement {using=xpath, value=//div[@class=&apos;toast-title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62587/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc558235bbf622da0d774df7c8ed2fe8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ALFSuite-class-failed -->
+          <div class="suite-ALFSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.EditLotTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcEditLot">
+                  </a> <!-- tcEditLot -->
+                  <span class="method-name">tcEditLot</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (dc558235bbf622da0d774df7c8ed2fe8)] -&gt; xpath: //input[@type=&apos;search&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62587/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc558235bbf622da0d774df7c8ed2fe8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utilities.AppUtil.visibilityOfElement(AppUtil.java:39)
+	at Utilities.AppUtil.setText(AppUtil.java:26)
+	at pageObjects.EditLotPage.fnEditLot(EditLotPage.java:44)
+	at testCases.EditLotTest.tcEditLot(EditLotTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ALFSuite-class-failed -->
           <div class="suite-ALFSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -156,43 +243,14 @@
           <div class="suite-ALFSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.AddLotTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="tcAddDealer">
-                  </a> <!-- tcAddDealer -->
-                  <span class="method-name">tcAddDealer</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tcCheckemptyDealer">
-                  </a> <!-- tcCheckemptyDealer -->
-                  <span class="method-name">tcCheckemptyDealer</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ALFSuite-class-passed -->
-          <div class="suite-ALFSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testCases.SetupMenuTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tcClickDealer">
-                  </a> <!-- tcClickDealer -->
-                  <span class="method-name">tcClickDealer</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tcClickLot">
-                  </a> <!-- tcClickLot -->
-                  <span class="method-name">tcClickLot</span>
+                  <a name="TC_userMenuSetUp">
+                  </a> <!-- TC_userMenuSetUp -->
+                  <span class="method-name">TC_userMenuSetUp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,8 +268,15 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;AllTests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.LoginTest&quot;/&gt;
-      &lt;class name=&quot;testCases.SetupMenuTest&quot;/&gt;
-      &lt;class name=&quot;testCases.AddLotTest&quot;/&gt;
+      &lt;class name=&quot;testCases.SetupMenuTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TC_userMenuSetUp&quot;/&gt;
+          &lt;exclude name=&quot;TC_dealerMenuSetuUp&quot;/&gt;
+          &lt;exclude name=&quot;TC_lotMenuSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testCases.SetupMenuTest --&gt;
+      &lt;class name=&quot;testCases.EditLotTest&quot;/&gt;
+      &lt;class name=&quot;testCases.DeleteUserTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AllTests --&gt;
 &lt;/suite&gt; &lt;!-- ALFSuite --&gt;
@@ -225,7 +290,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AllTests (3 classes)</span>
+                <span class="test-name">AllTests (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,32 +316,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tcCheckemptyDealer')
-data.setCell(0, 2, 'testCases.AddLotTest')
-data.setCell(0, 3, 20601);
+data.setCell(0, 1, 'TC_EditUser')
+data.setCell(0, 2, 'testCases.DeleteUserTest')
+data.setCell(0, 3, 59924);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tcAddDealer')
-data.setCell(1, 2, 'testCases.AddLotTest')
-data.setCell(1, 3, 18578);
+data.setCell(1, 1, 'tcEditLot')
+data.setCell(1, 2, 'testCases.EditLotTest')
+data.setCell(1, 3, 33391);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'userLogin')
 data.setCell(2, 2, 'testCases.LoginTest')
-data.setCell(2, 3, 6228);
+data.setCell(2, 3, 6697);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tcClickDealer')
+data.setCell(3, 1, 'TC_userMenuSetUp')
 data.setCell(3, 2, 'testCases.SetupMenuTest')
-data.setCell(3, 3, 4228);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tcClickLot')
-data.setCell(4, 2, 'testCases.SetupMenuTest')
-data.setCell(4, 3, 3465);
+data.setCell(3, 3, 3977);
 window.suiteTableData['ALFSuite']= { tableData: data, tableDiv: 'times-div-ALFSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-ALFSuite">
               </div> <!-- times-div-ALFSuite -->
             </div> <!-- times-div -->
@@ -291,9 +352,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ALFSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.SetupMenuTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC_lotMenuSetUp</span>
+                <br/>
+                <span class="ignored-method-name">TC_dealerMenuSetuUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-ALFSuite" class="panel">
@@ -309,29 +379,32 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">userLogin</span>
-                <span class="method-start">12656 ms</span>
+                <span class="method-start">17118 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.SetupMenuTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">tcClickDealer</span>
-                <span class="method-start">18889 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tcClickLot</span>
-                <span class="method-start">23129 ms</span>
+                <span class="method-name">TC_userMenuSetUp</span>
+                <span class="method-start">23820 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.AddLotTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.EditLotTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">tcCheckemptyDealer</span>
-                <span class="method-start">26596 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tcEditLot</span>
+                <span class="method-start">27802 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.DeleteUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">tcAddDealer</span>
-                <span class="method-start">47202 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_EditUser</span>
+                <span class="method-start">61197 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
