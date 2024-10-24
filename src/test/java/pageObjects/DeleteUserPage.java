@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-import Utilities.AppUtil;
+import AdminUtilities.AppUtil;
 
 public class DeleteUserPage extends BasePage {
 
@@ -48,6 +48,7 @@ public class DeleteUserPage extends BasePage {
       AppUtil.waitFor(2); 
      	 
      	 AppUtil.click(btn_confirmDel);
+     	 
      	 String success = AppUtil.getText(successMsg);
           softAssert.assertEquals(success, "User deleted successfully");
     	    	

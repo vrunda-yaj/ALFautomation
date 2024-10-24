@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import Utilities.AppUtil;
+import AdminUtilities.AppUtil;
 
 public class AddDealerPage  extends BasePage {
 

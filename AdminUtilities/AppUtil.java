@@ -1,4 +1,4 @@
-package Utilities;
+package AdminUtilities;
 
 import java.time.Duration;
 
@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -67,5 +68,16 @@ public class AppUtil extends BasePage {
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView()", element);
         waitFor(3);
+    }
+    public static void set_value (WebElement ele, String text){
+        visibilityOfElement(ele);
+        String script = "arguments[0].value = arguments[1]";
+        ((JavascriptExecutor) driver).executeScript(script,ele, text);	
+    }
+    
+    public static void scrollToElement(WebElement element) {
+    	visibilityOfElement(element);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
     }
 }

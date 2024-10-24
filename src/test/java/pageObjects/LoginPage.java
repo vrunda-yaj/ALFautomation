@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
-import Utilities.AppUtil;
+
+import AdminUtilities.AppUtil;
 
 public class LoginPage extends BasePage {
 
@@ -63,10 +64,10 @@ public class LoginPage extends BasePage {
             AppUtil.setText(password, PASSWORD);
             AppUtil.click(submit);
             
-            // Input OTP
+            
             AppUtil.setText(otp, LOGIN_OTP);
             AppUtil.click(btn_otp);
-
+            
             // Verify login success by checking Home page visibility
             String homePage = AppUtil.getText(Home);
             softAssert.assertEquals(homePage, "Home", "Login was not successful, 'Home' not displayed!");

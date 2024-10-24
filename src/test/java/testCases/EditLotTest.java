@@ -2,7 +2,7 @@ package testCases;
 
 import org.testng.annotations.Test;
 
-import Utilities.AppUtil;
+import AdminUtilities.AppUtil;
 import pageObjects.BasePage;
 import pageObjects.EditLotPage;
 

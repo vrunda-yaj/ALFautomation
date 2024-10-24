@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
-import Utilities.AppUtil;
+import AdminUtilities.AppUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
@@ -41,15 +41,15 @@ public class BasePage {
 	    public static final String DELETE_DEALNAME = "Test ALF deAler11";
 	    
 	   // ADD LOT PAGE VARIABLES
-	    public static final String ADD_LOTNAME = "Alf motor lot5";
-	    public static final String ADD_LOTCODE = "903";
+	    public static final String ADD_LOTNAME = "Alf motor lot7";
+	    public static final String ADD_LOTCODE = "907";
 	    public static final String ADD_LOTPHONE = "8654432322";
-	    public static final String ADD_LOTPOCNAME = "Alf motor lot5";
-	    public static final String ADD_LOTPOCEMAIL = "alfmotor05@yopmail.com";
+	    public static final String ADD_LOTPOCNAME = "Alf motor lot7";
+	    public static final String ADD_LOTPOCEMAIL = "alfmotor07@yopmail.com";
 	    public static final String ADD_LOTPOCPHONE = "8654432322";
 	    public static final String ADD_LOTADDRESS = "FLORIDA";
 	    public static final String ADD_LOTCITY = "MIAMI";
-	    public static final String ADD_LOTZIP = "56744";
+	    public static final String ADD_LOTZIP = "56743";
 	    
 	    //EDIT LOT PAGE VARIABLES
 	    public static final String EDIT_LOTNAME = "Alf motor lot3";
@@ -60,11 +60,11 @@ public class BasePage {
 	    public static final String DELETE_LOTNAME = "Alf motor lot4";
 	    
 	   //ADD USER PAGE VARIABLES
-	    public static final String ADD_UFNAME = "MARTIN";
+	    public static final String ADD_UFNAME = "Robin";
 	    public static final String ADD_UMNAME = "JOHN";
 	    public static final String ADD_UPHONE = "5443232110";
 	    public static final String ADD_UTITLE = "F and I dealer";
-	    public static final String ADD_UEMAIL = "martinzucot01@yopmail.com";
+	    public static final String ADD_UEMAIL = "robin011@yopmail.com";
 	    public static final String ADD_ULNAME = "ZUCOWICH";
 	    public static final String ADD_UMOTHERLNAME = "MARY";
 	    

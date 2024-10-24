@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-import Utilities.AppUtil;
+import AdminUtilities.AppUtil;
 
 public class DeleteDealerPage extends BasePage {
 	public DeleteDealerPage() {

@@ -7,17 +7,17 @@
       <class name="testCases.SetupMenuTest">
        <methods>
         <exclude name="TC_dealerMenuSetuUp" />
-        <exclude name="TC_lotMenuSetUp" />
-          <include name="TC_userMenuSetUp" />
+        <include name="TC_lotMenuSetUp" />
+        <exclude name="TC_userMenuSetUp" />
         </methods>
       </class> 
      <!-- <class name="testCases.EditDealerTest"/> -->
     <!-- <class name="testCases.AddDealerTest"/>-->
      <!--<class name="testCases.DeleteDealerTest"/>-->
-    <!-- <class name="testCases.AddLotTest"/> -->
+ <class name="testCases.AddLotTest"/> 
    <!-- <class name="testCases.EditLotTest"/>-->
     <!-- <class name="testCases.DeleteLotTest"/> -->
-     <!--<class name="testCases.AddUserTest">
+    <!--<class name="testCases.AddUserTest">
      <methods>
        <exclude name="TC_NoDealerLot" />
        <exclude name="TC_DealerLot" />
@@ -25,7 +25,7 @@
      </methods>
       </class> -->
       <!-- <class name="testCases.EditUserTest"/>-->
-      <class name="testCases.DeleteUserTest"/>
+      <!--<class name="testCases.DeleteUserTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Utilities.AppUtil;
+import AdminUtilities.AppUtil;
 import pageObjects.AddDealerPage;
 import pageObjects.BasePage;
 
