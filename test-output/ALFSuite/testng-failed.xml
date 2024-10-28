@@ -3,8 +3,16 @@
 <suite name="Failed suite [ALFSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="AllTests(failed)">
     <classes>
+      <class name="testCases.EditUserTest">
+        <methods>
+          <include name="TC_EditUser"/>
+          <include name="setUpReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.EditUserTest -->
       <class name="testCases.LoginTest">
         <methods>
+          <include name="beforeMethod"/>
           <include name="userLogin"/>
           <include name="launchURL"/>
         </methods>
@@ -14,11 +22,6 @@
           <include name="TC_userMenuSetUp"/>
         </methods>
       </class> <!-- testCases.SetupMenuTest -->
-      <class name="testCases.AddUserTest">
-        <methods>
-          <include name="TC_DealerMultiLot"/>
-        </methods>
-      </class> <!-- testCases.AddUserTest -->
     </classes>
   </test> <!-- AllTests(failed) -->
 </suite> <!-- Failed suite [ALFSuite] -->

@@ -11,14 +11,14 @@
       <class name="ApptestCases.SaveSubmitTest">
         <methods>
           <include name="tc_applicationSubmit"/>
-          <include name="tc_verifyEditDraft"/>
         </methods>
       </class> <!-- ApptestCases.SaveSubmitTest -->
-      <class name="ApptestCases.NewVehicleTest">
+      <class name="ApptestCases.UsedVehicleTest">
         <methods>
-          <include name="fillCollateralInformationNew"/>
+          <include name="selectAdditionalProductUsed"/>
+          <include name="fillCollateralInformationUsed"/>
         </methods>
-      </class> <!-- ApptestCases.NewVehicleTest -->
+      </class> <!-- ApptestCases.UsedVehicleTest -->
     </classes>
   </test> <!-- AppTests(failed) -->
 </suite> <!-- Failed suite [ALFAPPSuite] -->

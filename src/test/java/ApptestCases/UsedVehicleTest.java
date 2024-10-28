@@ -4,11 +4,12 @@ import org.testng.annotations.Test;
 
 import AdminUtilities.AppUtil;
 import AppPageObject.UsedVehiclePage;
-import pageObjects.BasePage;
+import AppUtilities.AppActionUtil;
+import AppPageObject.BasePage;
 
 public class UsedVehicleTest extends BasePage {
 	UsedVehiclePage ob;
-    AppUtil actionUtils = new AppUtil();
+	AppActionUtil actionUtils = new AppActionUtil();
 
    
     @Test(priority = 1)

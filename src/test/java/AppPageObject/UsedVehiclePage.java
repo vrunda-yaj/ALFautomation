@@ -1,14 +1,14 @@
 package AppPageObject;
 
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
-import AdminUtilities.AppUtil;
 import AppUtilities.AppActionUtil;
-import pageObjects.BasePage;
+//import AppPageObject.BasePage;
+
 
 public class UsedVehiclePage extends BasePage {
 	AppActionUtil actionUtils = new AppActionUtil();
@@ -70,45 +70,51 @@ public class UsedVehiclePage extends BasePage {
 	    WebElement APSalesPrice2;
 
 	    public void fillDealDetailForUsed() throws InterruptedException {
-	        AppUtil.set_value(salesPrice, ExcelUtility.excel("VehicleType",0));
-	        AppUtil.set_value(downPayment, ExcelUtility.excel("VehicleType", 1));
-	        AppUtil.select_by_value(insuranceType, "Double Interest");
-	        AppUtil.set_text(Insurance, ExcelUtility.excel("VehicleType",2));
-	        AppUtil.set_value(tradeInValue,ExcelUtility.excel("VehicleType",3));
-	        AppUtil.waitFor(2);
-	        AppUtil.set_value(tradeInDebt, ExcelUtility.excel("VehicleType",4));
-	        AppUtil.waitFor(2);
-	        AppUtil.click(tradeInValue);
-	        tradeInValue.sendKeys(Keys.BACK_SPACE);
-	        AppUtil.waitFor(3);
-	        AppUtil.select_by_value(Vehicle_type,"Used");
-	        AppUtil.visibilityOfElement(term);
-	        AppUtil.select_by_value(term,"60");
+	    	AppActionUtil.click(salesPrice);
+	    	AppActionUtil.setText(salesPrice, SALESPRICE);
+	    	AppActionUtil.click(downPayment);
+	    	AppActionUtil.setText(downPayment, DOWNPAYMENT);
+	    	AppActionUtil.select_by_value(insuranceType, "Double Interest");
+	    	AppActionUtil.setText(Insurance,INSURANCE);
+	    	AppActionUtil.click(tradeInValue);
+	    	AppActionUtil.setText(tradeInValue,TRADE_INVALUE);
+	    	AppActionUtil.click(tradeInDebt);
+	    	AppActionUtil.setText(tradeInDebt,TRADE_INDEBT);
+	    	AppActionUtil.waitFor(2);
+	        //AppUtil.click(tradeInValue);
+	       // tradeInValue.sendKeys(Keys.BACK_SPACE);
+	     //   AppUtil.waitFor(3);
+	    	AppActionUtil.select_by_value(Vehicle_type,"Used");
+//	        ApplicationUtility.click(Vehicle_type);
+//	        ApplicationUtility.waitFor(2);
+//	        ApplicationUtility.click(New);
+	    	AppActionUtil.waitFor(2);
+	    	AppActionUtil.select_by_value(term,"60");
 	    }
 
 	    public void fillCollateralInformationForUsed() throws InterruptedException {
-	        SoftAssert soft = new SoftAssert();
-	        AppUtil.set_text(Mileage, ExcelUtility.excel("VehicleType",5));
-	        AppUtil.set_text(VIN, ExcelUtility.excel("VehicleType",6));
-	        AppUtil.waitFor(10);
-	        AppUtil.visibilityOfElement(series);
-	        AppUtil.waitFor(5);
-	        AppUtil.select_by_value(series,"SE");
-	        AppUtil.waitFor(3);
-	        AppUtil.visibilityOfElement(style);
-	        AppUtil.select_by_value(style,"4D Hatchback 6sp");
-	        AppUtil.waitFor(5);
-	        AppUtil.select_by_value(imported, "0");
-	        AppUtil.set_text(color,"123455");
-	        String ColorError = AppUtil.get_text(colorError);
+	    	 SoftAssert soft = new SoftAssert();
+		        AppActionUtil.setText(Mileage, MILEAGE);
+		        AppActionUtil.setText(VIN,VINNO);
+		        AppActionUtil.waitFor(3);
+		        AppActionUtil.scrollToElement(color);
+	        AppActionUtil.waitFor(5);	       
+	        AppActionUtil.select_by_value(series,"SE");
+	        AppActionUtil.waitFor(3);
+	        AppActionUtil.visibilityOfElement(style);
+	        AppActionUtil.select_by_value(style,"4D Hatchback 6sp");
+	        AppActionUtil.waitFor(5);
+	        AppActionUtil.select_by_value(imported, "0");
+	        AppActionUtil.setText(color,"123455");
+	        String ColorError = AppActionUtil.getText(colorError);
 	        soft.assertEquals(ColorError,"Please enter a valid string");
-	        AppUtil.clear(color);
-	        AppUtil.set_text(color, ExcelUtility.excel("VehicleType",8));
-	        AppUtil.set_text(licensePlate,"!@#$123");
-	        String licenseError = AppUtil.get_text(licensePlateError);
+	        AppActionUtil.clear(color);
+	        AppActionUtil.setText(color, COLOR);
+	        AppActionUtil.setText(licensePlate,"!@#$123");
+	        String licenseError = AppActionUtil.getText(licensePlateError);
 	        soft.assertEquals(licenseError,"Please enter a valid string");
-	        AppUtil.clear(licensePlate);
-	        AppUtil.set_text(licensePlate, ExcelUtility.excel("VehicleType",9));
+	        AppActionUtil.clear(licensePlate);
+	        AppActionUtil.setText(licensePlate, LICENSE_PLATE);
 //	        Application_Uitility.scroll_till_element(Additional_Equipment_1);
 //	        Application_Uitility.click(Additional_Equipment_1);
 //	        Application_Uitility.scroll_till_element(Additional_Equipment_2);
@@ -118,14 +124,12 @@ public class UsedVehiclePage extends BasePage {
 
 	    public void addAdditionalProduct() throws InterruptedException {
 
-	        AppUtil.scroll_till_element(APBox1);
-	        AppUtil.click(APBox1);
-	        AppUtil.select_by_value(APCoverage1,"17");
-	        AppUtil.set_text(APSalesPrice1,"599");
-	        AppUtil.scroll_till_element(APBox2);
-	        AppUtil.click(APBox2);
-	        AppUtil.select_by_value(APCoverage2,"36");
-	        AppUtil.set_text(APSalesPrice2,"699");
+	    	 AppActionUtil.scroll_till_element(APBox1);
+		        AppActionUtil.click(APBox1);
+		        AppActionUtil.waitFor(2);
+		        AppActionUtil.select_by_value(APCoverage1,"124");
+		        AppActionUtil.setText(APSalesPrice1,"599");
+	      
 	    }
 
 }

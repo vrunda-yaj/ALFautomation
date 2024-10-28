@@ -4,7 +4,8 @@
   <test  name="AppTests">
     <classes>
       <class name="ApptestCases.LoginTest"/>
-       <class name="ApptestCases.NewVehicleTest"/>
+      <!--<class name="ApptestCases.NewVehicleTest"/>-->
+       <class name="ApptestCases.UsedVehicleTest"/>
        <class name="ApptestCases.FillApplicantDetailsTest"/>
         <!--<class name="ApptestCases.AddCoApplicantTest"/>-->
        <class name="ApptestCases.SaveSubmitTest"/>

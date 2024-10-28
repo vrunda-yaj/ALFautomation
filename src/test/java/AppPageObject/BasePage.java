@@ -31,8 +31,8 @@ public class BasePage {
 	    public static final String TRADE_INVALUE = "50000";
 	    public static final String TRADE_INDEBT = "3000";
 	    public static final String MILEAGE = "1100";
-	    public static final String VINNO = "5YFEPMAE7MP250544";	    
-	    public static final String YEAR = "2024";
+	    public static final String VINNO = "5YFEPMAE7MP250544";	   
+	   public static final String YEAR = "2024";
 	    public static final String COLOR = "Black";
 	    public static final String LICENSE_PLATE = "AK1453790";
 	    

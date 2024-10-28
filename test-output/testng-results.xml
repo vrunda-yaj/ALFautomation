@@ -1,338 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="13" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T18:12:31 IST" name="ALFAPPSuite" finished-at="2024-10-24T18:16:18 IST" duration-ms="227859">
+  <suite started-at="2024-10-28T17:49:10 IST" name="ALFSuite" finished-at="2024-10-28T17:50:01 IST" duration-ms="51532">
     <groups>
     </groups>
-    <test started-at="2024-10-24T18:12:31 IST" name="AppTests" finished-at="2024-10-24T18:16:18 IST" duration-ms="227859">
-      <class name="ApptestCases.SaveSubmitTest">
-        <test-method signature="tc_applicationSave()[pri:0, instance:ApptestCases.SaveSubmitTest@1033576a]" started-at="2024-10-24T18:14:57 IST" name="tc_applicationSave" finished-at="2024-10-24T18:15:12 IST" duration-ms="15166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_applicationSave -->
-        <test-method signature="tc_applicationSubmit()[pri:0, instance:ApptestCases.SaveSubmitTest@1033576a]" started-at="2024-10-24T18:15:12 IST" name="tc_applicationSubmit" finished-at="2024-10-24T18:16:06 IST" duration-ms="54058" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (e498eac93d46c07c9a1340f06993fbec)] -> xpath: //div[contains(text(),'Application submitted successfully')]] (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (e498eac93d46c07c9a1340f06993fbec)] -> xpath: //div[contains(text(),'Application submitted successfully')]] (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at AppUtilities.AppActionUtil.visibilityOfElement(AppActionUtil.java:39)
-at AppPageObject.SaveSubmitPage.submitAndFinanceCalculation(SaveSubmitPage.java:73)
-at ApptestCases.SaveSubmitTest.tc_applicationSubmit(SaveSubmitTest.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Application submitted successfully')]"}
-  (Session info: chrome=130.0.6723.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e498eac93d46c07c9a1340f06993fbec, findElement {using=xpath, value=//div[contains(text(),'Application submitted successfully')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53645/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e498eac93d46c07c9a1340f06993fbec
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_applicationSubmit -->
-        <test-method signature="tc_verifyEditDraft()[pri:0, instance:ApptestCases.SaveSubmitTest@1033576a]" started-at="2024-10-24T18:16:06 IST" name="tc_verifyEditDraft" finished-at="2024-10-24T18:16:13 IST" duration-ms="7069" status="FAIL">
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: {"status":12,"value":"Element is not currently interactable and may not be manipulated"}
-  (Session info: chrome=130.0.6723.70)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e498eac93d46c07c9a1340f06993fbec, clearElement {id=f.44EB4004CF89EDFE47F685E110EB5EC1.d.C9A810FFC98523EA87B3643B513D45BA.e.1256}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53645/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e498eac93d46c07c9a1340f06993fbec)] -> xpath: //input[@id='socialSecurityNumber']]
-Session ID: e498eac93d46c07c9a1340f06993fbec]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":12,"value":"Element is not currently interactable and may not be manipulated"}
-  (Session info: chrome=130.0.6723.70)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e498eac93d46c07c9a1340f06993fbec, clearElement {id=f.44EB4004CF89EDFE47F685E110EB5EC1.d.C9A810FFC98523EA87B3643B513D45BA.e.1256}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53645/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e498eac93d46c07c9a1340f06993fbec)] -> xpath: //input[@id='socialSecurityNumber']]
-Session ID: e498eac93d46c07c9a1340f06993fbec
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy13.clear(Unknown Source)
-at AppUtilities.AppActionUtil.clear(AppActionUtil.java:50)
-at AppPageObject.SaveSubmitPage.editInDraft(SaveSubmitPage.java:50)
-at ApptestCases.SaveSubmitTest.tc_verifyEditDraft(SaveSubmitTest.java:24)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_verifyEditDraft -->
-      </class> <!-- ApptestCases.SaveSubmitTest -->
-      <class name="ApptestCases.NewVehicleTest">
-        <test-method signature="fillDealDetailNew()[pri:1, instance:ApptestCases.NewVehicleTest@7c37508a]" started-at="2024-10-24T18:13:07 IST" name="fillDealDetailNew" finished-at="2024-10-24T18:13:13 IST" duration-ms="6510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillDealDetailNew -->
-        <test-method signature="fillCollateralInformationNew()[pri:2, instance:ApptestCases.NewVehicleTest@7c37508a]" started-at="2024-10-24T18:13:13 IST" name="fillCollateralInformationNew" finished-at="2024-10-24T18:14:15 IST" duration-ms="61841" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[contains(text(),'ALTIMA')]' (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[contains(text(),'ALTIMA')]' (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at AppUtilities.AppActionUtil.visibilityOfElement(AppActionUtil.java:39)
-at AppUtilities.AppActionUtil.click(AppActionUtil.java:20)
-at AppPageObject.NewVehiclePage.fillCollateralInformationForNew(NewVehiclePage.java:123)
-at ApptestCases.NewVehicleTest.fillCollateralInformationNew(NewVehicleTest.java:24)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[contains(text(),'ALTIMA')]"}
-  (Session info: chrome=130.0.6723.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e498eac93d46c07c9a1340f06993fbec, findElement {using=xpath, value=//li[contains(text(),'ALTIMA')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53645/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e498eac93d46c07c9a1340f06993fbec
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillCollateralInformationNew -->
-        <test-method signature="selectAdditionalProductNew()[pri:3, instance:ApptestCases.NewVehicleTest@7c37508a]" started-at="2024-10-24T18:14:15 IST" name="selectAdditionalProductNew" finished-at="2024-10-24T18:14:21 IST" duration-ms="5995" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectAdditionalProductNew -->
-      </class> <!-- ApptestCases.NewVehicleTest -->
-      <class name="ApptestCases.FillApplicantDetailsTest">
-        <test-method signature="fillApplicantDetails()[pri:1, instance:ApptestCases.FillApplicantDetailsTest@247310d0]" started-at="2024-10-24T18:14:21 IST" name="fillApplicantDetails" finished-at="2024-10-24T18:14:31 IST" duration-ms="10441" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillApplicantDetails -->
-        <test-method signature="fillPhysicalAddressDetails()[pri:2, instance:ApptestCases.FillApplicantDetailsTest@247310d0]" started-at="2024-10-24T18:14:31 IST" name="fillPhysicalAddressDetails" finished-at="2024-10-24T18:14:34 IST" duration-ms="2323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillPhysicalAddressDetails -->
-        <test-method signature="fillPreviousPhysicalAddressDetails()[pri:3, instance:ApptestCases.FillApplicantDetailsTest@247310d0]" started-at="2024-10-24T18:14:34 IST" name="fillPreviousPhysicalAddressDetails" finished-at="2024-10-24T18:14:39 IST" duration-ms="4847" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillPreviousPhysicalAddressDetails -->
-        <test-method signature="fillEmploymentInformationDetails()[pri:4, instance:ApptestCases.FillApplicantDetailsTest@247310d0]" started-at="2024-10-24T18:14:39 IST" name="fillEmploymentInformationDetails" finished-at="2024-10-24T18:14:42 IST" duration-ms="3917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillEmploymentInformationDetails -->
-        <test-method signature="fillAddEmploymentInformationDetails()[pri:6, instance:ApptestCases.FillApplicantDetailsTest@247310d0]" started-at="2024-10-24T18:14:42 IST" name="fillAddEmploymentInformationDetails" finished-at="2024-10-24T18:14:50 IST" duration-ms="7604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillAddEmploymentInformationDetails -->
-        <test-method signature="fillAdditionalMonthlyIncomeDetails()[pri:7, instance:ApptestCases.FillApplicantDetailsTest@247310d0]" started-at="2024-10-24T18:14:50 IST" name="fillAdditionalMonthlyIncomeDetails" finished-at="2024-10-24T18:14:57 IST" duration-ms="6879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillAdditionalMonthlyIncomeDetails -->
-      </class> <!-- ApptestCases.FillApplicantDetailsTest -->
-      <class name="ApptestCases.LoginTest">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:ApptestCases.LoginTest@5ddeb7cb]" started-at="2024-10-24T18:12:31 IST" name="launchURL" finished-at="2024-10-24T18:12:50 IST" duration-ms="19642" status="PASS">
+    <test started-at="2024-10-28T17:49:10 IST" name="AllTests" finished-at="2024-10-28T17:50:01 IST" duration-ms="51532">
+      <class name="testCases.LoginTest">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:testCases.LoginTest@303cf2ba]" started-at="2024-10-28T17:49:10 IST" name="launchURL" finished-at="2024-10-28T17:49:22 IST" duration-ms="12378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="passwordForget()[pri:1, instance:ApptestCases.LoginTest@5ddeb7cb]" started-at="2024-10-24T18:12:50 IST" name="passwordForget" finished-at="2024-10-24T18:12:54 IST" duration-ms="3739" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.LoginTest@303cf2ba]" started-at="2024-10-28T17:49:22 IST" name="beforeMethod" finished-at="2024-10-28T17:49:22 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- passwordForget -->
-        <test-method signature="invalidLogin()[pri:2, instance:ApptestCases.LoginTest@5ddeb7cb]" started-at="2024-10-24T18:12:54 IST" name="invalidLogin" finished-at="2024-10-24T18:12:56 IST" duration-ms="1604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method signature="userLogin()[pri:3, instance:ApptestCases.LoginTest@5ddeb7cb]" started-at="2024-10-24T18:12:56 IST" name="userLogin" finished-at="2024-10-24T18:13:01 IST" duration-ms="5503" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="userLogin()[pri:1, instance:testCases.LoginTest@303cf2ba]" started-at="2024-10-28T17:49:22 IST" name="userLogin" finished-at="2024-10-28T17:49:29 IST" duration-ms="6641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method signature="clickCreateApplication()[pri:5, instance:ApptestCases.LoginTest@5ddeb7cb]" started-at="2024-10-24T18:13:01 IST" name="clickCreateApplication" finished-at="2024-10-24T18:13:07 IST" duration-ms="5418" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@303cf2ba]" started-at="2024-10-28T17:50:01 IST" name="tearDown" finished-at="2024-10-28T17:50:01 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickCreateApplication -->
-        <test-method is-config="true" signature="userLogout()[pri:0, instance:ApptestCases.LoginTest@5ddeb7cb]" started-at="2024-10-24T18:16:13 IST" name="userLogout" finished-at="2024-10-24T18:16:18 IST" duration-ms="5090" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "jse" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "jse" is null
-at AdminUtilities.AppUtil.scroll_till_element(AppUtil.java:69)
-at AppPageObject.LoginPage.logOut(LoginPage.java:123)
-at ApptestCases.LoginTest.userLogout(LoginTest.java:62)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.afterRun(TestRunner.java:818)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginTest -->
+      <class name="testCases.SetupMenuTest">
+        <test-method signature="TC_userMenuSetUp()[pri:0, instance:testCases.SetupMenuTest@609e8838]" started-at="2024-10-28T17:49:29 IST" name="TC_userMenuSetUp" finished-at="2024-10-28T17:49:33 IST" duration-ms="3985" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLogout -->
-      </class> <!-- ApptestCases.LoginTest -->
-    </test> <!-- AppTests -->
-  </suite> <!-- ALFAPPSuite -->
+        </test-method> <!-- TC_userMenuSetUp -->
+      </class> <!-- testCases.SetupMenuTest -->
+      <class name="testCases.EditUserTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testCases.EditUserTest@359df09a]" started-at="2024-10-28T17:49:10 IST" name="setUpReport" finished-at="2024-10-28T17:49:10 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method signature="TC_EditUser()[pri:1, instance:testCases.EditUserTest@359df09a]" started-at="2024-10-28T17:49:33 IST" name="TC_EditUser" finished-at="2024-10-28T17:50:00 IST" duration-ms="27148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_EditUser -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.EditUserTest@359df09a]" started-at="2024-10-28T17:49:33 IST" name="beforeMethod" finished-at="2024-10-28T17:49:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.EditUserTest@359df09a]" started-at="2024-10-28T17:50:00 IST" name="tearDown" finished-at="2024-10-28T17:50:01 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.EditUserTest -->
+    </test> <!-- AllTests -->
+  </suite> <!-- ALFSuite -->
 </testng-results>

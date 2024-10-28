@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ALFAPPSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="AppTests(failed)">
+<suite name="Failed suite [ALFSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AllTests(failed)">
     <classes>
-      <class name="ApptestCases.LoginTest">
+      <class name="testCases.EditUserTest">
         <methods>
-          <include name="userLogout"/>
+          <include name="TC_EditUser"/>
+          <include name="setUpReport"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- ApptestCases.LoginTest -->
-      <class name="ApptestCases.SaveSubmitTest">
+      </class> <!-- testCases.EditUserTest -->
+      <class name="testCases.LoginTest">
         <methods>
-          <include name="tc_applicationSubmit"/>
-          <include name="tc_verifyEditDraft"/>
+          <include name="beforeMethod"/>
+          <include name="userLogin"/>
+          <include name="launchURL"/>
         </methods>
-      </class> <!-- ApptestCases.SaveSubmitTest -->
-      <class name="ApptestCases.NewVehicleTest">
+      </class> <!-- testCases.LoginTest -->
+      <class name="testCases.SetupMenuTest">
         <methods>
-          <include name="fillCollateralInformationNew"/>
+          <include name="TC_userMenuSetUp"/>
         </methods>
-      </class> <!-- ApptestCases.NewVehicleTest -->
+      </class> <!-- testCases.SetupMenuTest -->
     </classes>
-  </test> <!-- AppTests(failed) -->
-</suite> <!-- Failed suite [ALFAPPSuite] -->
+  </test> <!-- AllTests(failed) -->
+</suite> <!-- Failed suite [ALFSuite] -->
