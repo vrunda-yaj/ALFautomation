@@ -24,10 +24,7 @@ public class EditUserTest extends BasePage {
 	
     AppUtil actionUtils = new AppUtil();
     EditUserPage Edituser;
-    Faker faker;
-	HashMap<String, String> requestBody = new HashMap<>();
-	 String auth_token;
-	 ExtentReports extent;
+   	 ExtentReports extent;
 	    ExtentTest test;
 	    ExtentSparkReporter sparkReporter;
     
